@@ -38,7 +38,7 @@ class GuardComplaintsAdapter(
             upvoteCountTextView.text = complaint.upvotes.toString()
 
             when (complaint.status) {
-                "Pending" -> statusIcon.setImageResource(R.drawable.red_dot)
+                "Pending" -> statusIcon.setImageResource(R.drawable.unread)
                 "On Hold" -> statusIcon.setImageResource(R.drawable.pending)
                 "Solved" -> statusIcon.setImageResource(R.drawable.greentick)
             }

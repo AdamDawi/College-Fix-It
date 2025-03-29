@@ -36,7 +36,7 @@ class ComplaintsAdapter(
 
             // Update UI according to status
             when (complaint.status) {
-                "Pending" -> binding.statusIcon.setImageResource(R.drawable.red_dot)
+                "Pending" -> binding.statusIcon.setImageResource(R.drawable.unread)
                 "On Hold" -> binding.statusIcon.setImageResource(R.drawable.pending)
                 "Solved" -> binding.statusIcon.setImageResource(R.drawable.greentick)
             }
